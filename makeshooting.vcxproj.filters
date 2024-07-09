@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="manager">
+      <UniqueIdentifier>{192eabfd-b3ea-4f31-8676-299a6dbfdc14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{85161cea-f0a5-4910-85e0-cb13bf895555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\base">
+      <UniqueIdentifier>{0e26e61c-1967-4fdb-a3df-9ec2513b6961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="container">
+      <UniqueIdentifier>{ae2436e6-0072-461d-8bbe-b62cc41a5757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="characters">
+      <UniqueIdentifier>{ef0a0c98-bfef-42f8-be85-f3b0796e041b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="background">
+      <UniqueIdentifier>{2ed88e58-0494-4917-b344-80c323224305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="characters\bullets">
+      <UniqueIdentifier>{a2470918-a23b-42cb-ad6f-7754decf5123}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GAME.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="gmain.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME_CLEAR.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME_OVER.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TITLE.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="STAGE.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SCENE.cpp">
+      <Filter>scene\base</Filter>
+    </ClCompile>
+    <ClCompile Include="CONTAINER.cpp">
+      <Filter>container</Filter>
+    </ClCompile>
+    <ClCompile Include="VECTOR2.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="COLOR.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ENEMIES.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
+    <ClCompile Include="HP_GAUGE.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
+    <ClCompile Include="PLAYER.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
+    <ClCompile Include="ITEM.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
+    <ClCompile Include="SOUND.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="WATER_FALL_ART.cpp">
+      <Filter>background</Filter>
+    </ClCompile>
+    <ClCompile Include="WATER_FALL.cpp">
+      <Filter>background</Filter>
+    </ClCompile>
+    <ClCompile Include="GAME_OBJECT.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="BOSS.cpp">
+      <Filter>characters</Filter>
+    </ClCompile>
+    <ClCompile Include="BOSS_BULLETS.cpp">
+      <Filter>characters\bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="ENEMY_BULLETS.cpp">
+      <Filter>characters\bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="PLAYER_BULLETS.cpp">
+      <Filter>characters\bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="BULLETS.cpp">
+      <Filter>characters\bullets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GAME.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME_CLEAR.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME_OVER.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="STAGE.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TITLE.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SCENE.h">
+      <Filter>scene\base</Filter>
+    </ClInclude>
+    <ClInclude Include="CONTAINER.h">
+      <Filter>container</Filter>
+    </ClInclude>
+    <ClInclude Include="COLOR.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ENEMIES.h">
+      <Filter>characters</Filter>
+    </ClInclude>
+    <ClInclude Include="HP_GAUGE.h">
+      <Filter>characters</Filter>
+    </ClInclude>
+    <ClInclude Include="ITEM.h">
+      <Filter>characters</Filter>
+    </ClInclude>
+    <ClInclude Include="SOUND.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="WATER_FALL_ART.h">
+      <Filter>background</Filter>
+    </ClInclude>
+    <ClInclude Include="WATER_FALL.h">
+      <Filter>background</Filter>
+    </ClInclude>
+    <ClInclude Include="GAME_OBJECT.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="VECTOR2.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+    <ClInclude Include="PLAYER.h">
+      <Filter>characters</Filter>
+    </ClInclude>
+    <ClInclude Include="BOSS.h">
+      <Filter>characters</Filter>
+    </ClInclude>
+    <ClInclude Include="BOSS_BULLETS.h">
+      <Filter>characters\bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="ENEMY_BULLETS.h">
+      <Filter>characters\bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="PLAYER_BULLETS.h">
+      <Filter>characters\bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="BULLETS.h">
+      <Filter>characters\bullets</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
