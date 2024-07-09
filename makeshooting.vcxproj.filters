@@ -55,9 +55,6 @@
     <ClCompile Include="VECTOR2.cpp">
       <Filter>resource</Filter>
     </ClCompile>
-    <ClCompile Include="COLOR.cpp">
-      <Filter>resource</Filter>
-    </ClCompile>
     <ClCompile Include="ENEMIES.cpp">
       <Filter>characters</Filter>
     </ClCompile>
@@ -119,9 +116,6 @@
     </ClInclude>
     <ClInclude Include="CONTAINER.h">
       <Filter>container</Filter>
-    </ClInclude>
-    <ClInclude Include="COLOR.h">
-      <Filter>resource</Filter>
     </ClInclude>
     <ClInclude Include="ENEMIES.h">
       <Filter>characters</Filter>

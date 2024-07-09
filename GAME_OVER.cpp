@@ -22,8 +22,9 @@ void GAME_OVER::init() {
 void GAME_OVER::update() {
 	game()->playerBulletsInst()->update();
 	game()->enemyBulletsInst()->update();
-	game()->enemiesInst()->move();	//発射(launch)と当たり判定(collision)は行わない。
-	game()->bossInst()->move();	//同上
+	game()->enemiesInst()->move();		//発射(launch)と当たり判定(collision)は行わない。
+	game()->bossInst()->move();			//同上
+	game()->playerInst()->zoom();		//PLAYERを拡大させる
 }
 
 void GAME_OVER::draw() {

@@ -15,7 +15,7 @@ void CONTAINER::setData(){
 	Data.title.textSize = 30;
 	Data.title.pos.x = 240;
 	Data.title.pos.y = 400;
-	strcpy_s(Data.title.start, "Zでスタート");
+	strcpy_s(Data.title.start, "Zで修行開始");
 	strcpy_s(Data.title.titleName, "滝行");
 	Data.title.startFont = CreateFontToHandle("MS ゴシック", Data.title.textSize, 30);
 	Data.title.titleNameFont = CreateFontToHandle("MS ゴシック", Data.title.textSize * 3, 30);
@@ -31,20 +31,21 @@ void CONTAINER::setData(){
 	Data.stage.messageFont = CreateFontToHandle("MS ゴシック", Data.stage.textSize, 30);
 
 	//GAME_CLEARクラスの設定
-	Data.gameClear.textColor = GetColor(0, 0, 0);
+	Data.gameClear.textColor = GetColor(200, 100, 100);
 	Data.gameClear.textSize = 30;
 	Data.gameClear.pos.x = 200;
 	Data.gameClear.pos.y = 200;
 	Data.gameClear.messageFont = CreateFontToHandle("MS ゴシック", Data.gameClear.textSize, 30);
 	strcpy_s(Data.gameClear.endMessage, "悟った！おめでとう");
+	strcpy_s(Data.gameClear.toTitleMessage, "Ｚでタイトルへ");
 
 	//GAME_OVERクラスの設定
-	Data.gameOver.textColor = GetColor(0, 0, 0);
-	Data.gameOver.textSize = 60;
-	Data.gameOver.pos.x = 240;
+	Data.gameOver.textColor = GetColor(255, 0, 0);
+	Data.gameOver.textSize = 70;
+	Data.gameOver.pos.x = 230;
 	Data.gameOver.pos.y = 200;
 	Data.gameOver.messageFont = CreateFontToHandle("MS ゴシック", Data.gameClear.textSize, 30);
-	strcpy_s(Data.gameOver.endMessage, "再修業→Zキー");
+	strcpy_s(Data.gameOver.endMessage, "再修業→Ｚキー");
 
 	//PLAYERの弾
 	Data.playerBullet.totalNum = 20;
@@ -58,7 +59,7 @@ void CONTAINER::setData(){
 	Data.playerBullet.sound.loadPlayerSound();
 	
 	//ENEMYの弾
-	Data.enemyBullet.totalNum = 20;
+	Data.enemyBullet.totalNum = 15;
 	Data.enemyBullet.curNum = 0;
 	Data.enemyBullet.advSpeed = 2;
 	Data.enemyBullet.angSpeed = 0;
@@ -80,7 +81,7 @@ void CONTAINER::setData(){
 	Data.player.angle = 0;
 	Data.player.advSpeed = 5;
 	Data.player.pos.x = SCREEN_WIDTH/2.0;
-	Data.player.pos.y = SCREEN_HEIGHT*5.0/6.0;
+	Data.player.pos.y = SCREEN_HEIGHT*6.0/7.0;
 	Data.player.exRate = 2.0;
 	Data.player.limitW = 100;
 	//PLAYERクラスで設定する弾に関するデータ
@@ -90,15 +91,15 @@ void CONTAINER::setData(){
 	Data.player.ofstLaunchDist = 8.0f;
 	Data.player.bulletSE = playerBulletData().sound.pBulletSEget();
 	//PLAYERの当たり判定
-	Data.player.bcRadius = 14;
+	Data.player.bcRadius = 24;
 	Data.player.invincibleTime = 30.0f;
 	Data.player.invincibleRestTime = 0;
-	Data.player.hp = 5;
+	Data.player.hp = 10;
 	Data.player.hpGaugeOfst = VECTOR2(0, 60);
 	Data.player.hpColor = GetColor(0, 200, 0);
 
 	//ENEMYクラスのデータ
-	Data.enemy.totalNum = 1;					//デバック時に変更
+	Data.enemy.totalNum = 8;					//デバック時に変更
 	Data.enemy.curNum = Data.enemy.totalNum;
 	Data.enemy.majRadius = 250;
 	Data.enemy.minRadius = 100;
@@ -134,7 +135,7 @@ void CONTAINER::setData(){
 	Data.boss.invincibleRestTime = 0;
 	Data.boss.invincibleTime = 10.0f;
 	Data.boss.hpGaugeOfst = VECTOR2(0, 30);
-	Data.boss.hp = 3;
+	Data.boss.hp = 30;
 	Data.boss.hpColor = GetColor(0, 200, 0);
 	
 	

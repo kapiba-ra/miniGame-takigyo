@@ -2,7 +2,7 @@
 #include "SCENE.h"
 #include "DxLib.h"
 #include "VECTOR2.h"
-#include "COLOR.h"
+
 class TITLE :
     public SCENE
 {

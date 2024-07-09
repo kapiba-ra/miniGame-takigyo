@@ -28,7 +28,10 @@ void GAME_CLEAR::update() {
 void GAME_CLEAR::draw() {
 	ClearDrawScreen();
 	game()->draw();
+	//メッセージの表示
 	DrawStringFToHandle(GameClear.pos.x, GameClear.pos.y, GameClear.endMessage,
+		GameClear.textColor, GameClear.messageFont);
+	DrawStringFToHandle(GameClear.pos.x, GameClear.pos.y + GameClear.textSize, GameClear.toTitleMessage,
 		GameClear.textColor, GameClear.messageFont);
 	ScreenFlip();
 }

@@ -143,7 +143,6 @@
     <ClCompile Include="BOSS.cpp" />
     <ClCompile Include="BOSS_BULLETS.cpp" />
     <ClCompile Include="BULLETS.cpp" />
-    <ClCompile Include="COLOR.cpp" />
     <ClCompile Include="CONTAINER.cpp" />
     <ClCompile Include="ENEMIES.cpp" />
     <ClCompile Include="ENEMY_BULLETS.cpp" />
@@ -168,7 +167,6 @@
     <ClInclude Include="BOSS.h" />
     <ClInclude Include="BOSS_BULLETS.h" />
     <ClInclude Include="BULLETS.h" />
-    <ClInclude Include="COLOR.h" />
     <ClInclude Include="CONTAINER.h" />
     <ClInclude Include="ENEMIES.h" />
     <ClInclude Include="ENEMY_BULLETS.h" />

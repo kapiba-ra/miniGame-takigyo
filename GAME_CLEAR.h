@@ -10,7 +10,8 @@ public:
         int textSize = 0;               //サイズ
         VECTOR2 pos = 0;                //場所の指定
         int messageFont = 0;            //フォント
-        char endMessage[20] = {};       //文字の配列(4の倍数で設定)
+        char endMessage[20] = {};       //クリアメッセージ
+        char toTitleMessage[20] = {};   //タイトルへ
     };
 private:
     DATA GameClear;        //上の構造体の実体
