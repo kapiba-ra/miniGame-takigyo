@@ -50,7 +50,7 @@ GAME::~GAME(){
 //À¿“I‚ÈmainŠÖ”
 void GAME::run(){	
 	//— ‰æ–Êˆ—‚È‚Ç”X‚Ìİ’è
-	ChangeWindowMode(FALSE);
+	ChangeWindowMode(TRUE);
 	if (DxLib_Init() == -1) { DxLib_End(); }
 	SetDrawScreen(DX_SCREEN_BACK);
 	SetBackgroundColor(100, 150, 200, 128);			//‚±‚±‚ÅTITLE‚Ì”wŒiF‚ğİ’è‚·‚é

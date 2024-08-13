@@ -159,5 +159,8 @@
     <ClInclude Include="BULLETS.h">
       <Filter>characters\bullets</Filter>
     </ClInclude>
+    <ClInclude Include="PoolAllocator.h">
+      <Filter>container</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

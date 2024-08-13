@@ -178,6 +178,7 @@
     <ClInclude Include="ITEM.h" />
     <ClInclude Include="PLAYER.h" />
     <ClInclude Include="PLAYER_BULLETS.h" />
+    <ClInclude Include="PoolAllocator.h" />
     <ClInclude Include="SOUND.h" />
     <ClInclude Include="VECTOR2.h" />
     <ClInclude Include="SCENE.h" />
