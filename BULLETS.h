@@ -4,6 +4,7 @@
 #include "GAME_OBJECT.h"
 #include "VECTOR2.h"
 #include "SOUND.h"
+#include "PoolAllocator.h"
 
 //PLAYER_BULLETS,ENEMY_BULLETSの基底クラス
 
@@ -31,7 +32,9 @@ private:
         VECTOR2 pos = 0;        //位置
         VECTOR2 vec = 0;        //発射方向
     };
-    BULLET* Bullets;            //配列は複数形
+    //BULLET* Bullets;            //配列は複数形
+    PoolAllocator<BULLET, 20> Bullets;  // アロケータの実装を試みる
+
     int screenWidth = 0;
     int screenHeight = 0;
 protected:

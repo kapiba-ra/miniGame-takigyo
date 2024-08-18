@@ -7,10 +7,10 @@ public:
 	{
 		for (int i = 0; i < MAXSIZE - 1; i++)
 		{
-			m_data[i].next = &m_data[i + 1];
+			m_block[i].next = &m_block[i + 1];
 		}
-		m_data[MAXSIZE - 1].next = nullptr;
-		m_list = &m_data[0];
+		m_block[MAXSIZE - 1].next = nullptr;		// 最後のBlockのnextはnullptr
+		m_list = &m_block[0];
 	}
 	~PoolAllocator()
 	{
@@ -20,10 +20,10 @@ public:
 	{
 		if (m_list)
 		{
-			DATA* current = m_list;
-			DATA* next = current->next;
+			Block* current = m_list;
+			Block* next = current->next;
 			m_list = next;
-			return reinterpret_cast<T*>(current->data);
+			return reinterpret_cast<T*>(current->block);
 		}
 		return nullptr;
 	}
@@ -32,19 +32,28 @@ public:
 	{
 		if (addr)
 		{
-			DATA* ptr = reinterpret_cast<DATA*>(addr);
+			Block* ptr = reinterpret_cast<Block*>(addr);
 			ptr->next = m_list;
 			m_list = ptr;
 		}
 	}
 
-private:
-	union DATA
+	// 演算子オーバーロード
+	T& operator[](int index)
 	{
-		DATA* next;
-		char data[sizeof(T)];
-	};
-	DATA m_data[MAXSIZE];
-	DATA* m_list;
+		return *reinterpret_cast<T*>(m_block[index].block);
+	}
+	const T& operator[](int index) const
+	{
+		return *reinterpret_cast<const T*>(m_block[index].block);
+	}
 
+private:
+	union Block
+	{
+		Block* next;
+		char block[sizeof(T)];
+	};
+	Block m_block[MAXSIZE];
+	Block* m_list;
 };
